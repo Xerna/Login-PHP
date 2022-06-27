@@ -1,0 +1,22 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":  "tailwindcss build -i ./src/input.css -o ./css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xerna/Login-PHP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xerna/Login-PHP/issues"
+  },
+  "homepage": "https://github.com/Xerna/Login-PHP#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  }
+}
