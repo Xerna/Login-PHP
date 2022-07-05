@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    .
 <div class="w-1/2 shadow-lg mx-auto my-24 h-1/4 flex">
     <div class="img-login w-1/2">
-        <img src="img/undraw_Unlock_re_a558.png" alt="" class="mx-auto">
+        <img src="../img/undraw_Unlock_re_a558.png" alt="" class="mx-auto">
     </div>
     <form class="w-1/2 flex flex-col justify-center items-start ml-5 pr-5">
         <div id="inputs" class="grid grid-cols-2 grid-rows-2 gap-2 w-1/2">
