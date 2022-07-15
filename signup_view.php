@@ -13,7 +13,7 @@
         <div class="img-login w-3/4">
             <img src="../img/undraw_welcome_cats_thqn.png" alt="" class="mx-auto">
         </div>
-        <form class="w-1/2 text-center ml-5 pr-5">
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" class="w-1/2 text-center ml-5 pr-5">
             <div id="inputs" class="">
                 <div class="input ">
                     <label for="name" class=" text-gray-700">Name</label>
@@ -50,7 +50,11 @@
             <br>
             <button type="submit" class="p-2 bg-indigo-600 text-white text-center px-10 rounded-lg mt-1 mb-5 pb-3">Sign Up</button>
             <br>
+            <?php if(!empty($msg)):?>
+            <p class="text-center"><?php echo $msg;?></p>
+            <?php endif;?>
         </form>
+
     </div>
 </body>
 </html>
