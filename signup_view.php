@@ -50,8 +50,8 @@
             <br>
             <button type="submit" class="p-2 bg-indigo-600 text-white text-center px-10 rounded-lg mt-1 mb-5 pb-3">Sign Up</button>
             <br>
-            <?php if(!empty($msg)):?>
-            <p class="text-center"><?php echo $msg;?></p>
+            <?php if(!empty($error)):?>
+            <p class="text-center"><?php echo $error;?></p>
             <?php endif;?>
         </form>
 
