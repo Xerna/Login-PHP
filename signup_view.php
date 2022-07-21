@@ -11,7 +11,7 @@
 <body>
     <div class="w-1/3 shadow-lg mx-auto mt-8 h-1/6 flex flex-col items-center">
         <div class="img-login w-3/4">
-            <img src="../img/undraw_welcome_cats_thqn.png" alt="" class="mx-auto">
+            <img src="img/undraw_welcome_cats_thqn.png" alt="" class="mx-auto">
         </div>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" class="w-1/2 text-center ml-5 pr-5">
             <div id="inputs" class="">

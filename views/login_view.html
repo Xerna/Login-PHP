@@ -12,7 +12,7 @@
     <div class="img-login w-1/2">
         <img src="../img/undraw_Unlock_re_a558.png" alt="" class="mx-auto">
     </div>
-    <form class="w-1/2 flex flex-col justify-center items-start ml-5 pr-5">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" class="w-1/2 flex flex-col justify-center items-start ml-5 pr-5">
         <div id="inputs" class="grid grid-cols-2 grid-rows-2 gap-2 w-1/2">
             <div class="input">
                 <label for="user" class="ml-2 text-gray-700">User</label>
@@ -27,7 +27,7 @@
         <a href="forgot_password.php" id="forgot_password" class="text-indigo-400 mt-2">Forgot password?</a>
         <br>
         <button type="submit" class="p-2 bg-indigo-600 text-white text-center px-10 rounded-lg">Login</button>
-        <a href="sign_up.php" id="sign_up"  class="text-indigo-400 mt-3">Don't have an account?</a>
+        <a href="signup.php" id="sign_up"  class="text-indigo-400 mt-3">Don't have an account?</a>
     </form>
 </div>
 

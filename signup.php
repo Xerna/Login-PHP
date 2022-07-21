@@ -1,4 +1,9 @@
-<?php 
+<?php session_start();
+
+if (isset($_SESSION['user'])){
+    header('Location: index.php');
+}
+
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $name = htmlspecialchars($_POST['name']);
     $last_name = $_POST['last_name'];
@@ -13,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         try {
             $conn = new PDO('mysql:host=localhost;dbname=xerna','root','');
         } catch (PDOException $e) {
-            echo "Error: ". $e;
+            echo "Error: ". $e->getMessage();
         }
         $stmt = $conn->prepare("SELECT username FROM users WHERE username = :user LIMIT 1");
         $stmt->execute(array(':user' => $user));
@@ -36,11 +41,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         ':lastname' => $last_name,
         ':username' => $user,
         ':password' => $pass));
+        header('Location: login.php');
     }
 }
 require "signup_view.php";
-echo $user;
-echo $name;
-echo $last_name;
-echo $pass;
 ?>

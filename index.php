@@ -1,8 +1,3 @@
 <?php session_start();
-if ($_SESSION['user']){
-    header('location: index.php');
-}else{
-    header('location: login.php');
-}
-echo "HOLA";
+echo "<a href='log_out.php'>CERRAR SESION</a>";
 ?>
